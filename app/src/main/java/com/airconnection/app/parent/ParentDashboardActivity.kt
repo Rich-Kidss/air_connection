@@ -47,20 +47,8 @@ class ParentDashboardActivity : AppCompatActivity(), SignalingClient.SignalingLi
             startActivity(intent)
         }
 
-        // Demo sample device if empty
-        if (deviceList.isEmpty()) {
-            val demoChild = ChildDevice(
-                deviceId = "demo_child_01",
-                parentEmail = parentEmail,
-                deviceName = "Samsung Galaxy S23",
-                customName = "Rahul's Phone (Demo)",
-                batteryLevel = 88,
-                model = "Samsung SM-S911B",
-                status = "online"
-            )
-            deviceList.add(demoChild)
-            adapter.notifyDataSetChanged()
-        }
+        // Realtime child list sync from Supabase
+        binding.emptyStateLayout.visibility = if (deviceList.isEmpty()) View.VISIBLE else View.GONE
     }
 
     override fun onDeviceListUpdated(devices: List<ChildDevice>) {

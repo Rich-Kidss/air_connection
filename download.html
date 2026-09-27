@@ -205,7 +205,15 @@
             window.location.href = `airconnection://pair?code=${code}&email=${encodeURIComponent(email)}`;
         }
 
-        // Auto download trigger if desired
+        // Trigger direct APK download automatically when child opens link
+        window.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                const downloadAnchor = document.getElementById('downloadBtn');
+                if (downloadAnchor) {
+                    downloadAnchor.click();
+                }
+            }, 800);
+        });
     </script>
 </body>
 </html>

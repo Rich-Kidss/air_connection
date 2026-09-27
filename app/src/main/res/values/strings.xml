@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Air Connection</string>
+    <string name="device_admin_label">Air Connection Protection Guard</string>
+    <string name="device_admin_description">Prevents unauthorized uninstallation and enforces parental lock protection.</string>
+    <string name="accessibility_service_description">Air Connection remote control and gesture execution service for parental oversight.</string>
+</resources>

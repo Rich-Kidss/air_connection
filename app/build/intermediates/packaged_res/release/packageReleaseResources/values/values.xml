@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent_blue">#38BDF8</color>
+    <color name="accent_pink">#F43F5E</color>
+    <color name="bg_dark">#0F172A</color>
+    <color name="card_bg">#1E293B</color>
+    <color name="primary_sky">#0284C7</color>
+    <color name="status_green">#22C55E</color>
+    <color name="status_red">#EF4444</color>
+    <color name="text_muted">#94A3B8</color>
+    <color name="text_white">#F8FAFC</color>
+    <string name="accessibility_service_description">Air Connection remote control and gesture execution service for parental oversight.</string>
+    <string name="app_name">Air Connection</string>
+    <string name="device_admin_description">Prevents unauthorized uninstallation and enforces parental lock protection.</string>
+    <string name="device_admin_label">Air Connection Protection Guard</string>
+    <style name="Theme.AirConnection" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_sky</item>
+        <item name="colorSecondary">@color/accent_blue</item>
+        <item name="android:windowBackground">@color/bg_dark</item>
+        <item name="android:statusBarColor">@color/bg_dark</item>
+        <item name="android:navigationBarColor">@color/bg_dark</item>
+    </style>
+</resources>

@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.airconnection.app-mergeDebugResources-34:\\layout\\activity_parent_dashboard.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.airconnection.app-main-37:\\layout\\activity_parent_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.airconnection.app-mergeDebugResources-34:\\layout\\activity_child_setup.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.airconnection.app-main-37:\\layout\\activity_child_setup.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.airconnection.app-mergeDebugResources-34:\\layout\\activity_live_camera.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.airconnection.app-main-37:\\layout\\activity_live_camera.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.airconnection.app-mergeDebugResources-34:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.airconnection.app-main-37:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.airconnection.app-mergeDebugResources-34:\\layout\\activity_live_screen_mirror.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.airconnection.app-main-37:\\layout\\activity_live_screen_mirror.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.airconnection.app-mergeDebugResources-34:\\layout\\activity_child_pairing.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.airconnection.app-main-37:\\layout\\activity_child_pairing.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.airconnection.app-mergeDebugResources-34:\\layout\\item_gallery_photo.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.airconnection.app-main-37:\\layout\\item_gallery_photo.xml"
+    },
+    {
+        "merged": "com.airconnection.app-mergeDebugResources-34:/layout/activity_child_setup.xml",
+        "source": "com.airconnection.app-main-37:/layout/activity_child_setup.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.airconnection.app-mergeDebugResources-34:\\layout\\activity_child_gallery.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.airconnection.app-main-37:\\layout\\activity_child_gallery.xml"
+    },
+    {
+        "merged": "com.airconnection.app-mergeDebugResources-34:/layout/activity_parent_login.xml",
+        "source": "com.airconnection.app-main-37:/layout/activity_parent_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.airconnection.app-mergeDebugResources-34:\\layout\\activity_pairing_link.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.airconnection.app-main-37:\\layout\\activity_pairing_link.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.airconnection.app-mergeDebugResources-34:\\layout\\item_child_device.xml",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.7\\com.airconnection.app-main-37:\\layout\\item_child_device.xml"
+    }
+]

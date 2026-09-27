@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pair a Child Device"
+        android:textColor="@color/accent_blue"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Send this link to your child's device or scan the QR code to install and pair automatically."
+        android:textAlignment="center"
+        android:textColor="@color/text_muted"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/ivQrCodePlaceholder"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="32dp"
+        android:background="#FFFFFF"
+        android:contentDescription="QR Code Placeholder"
+        android:padding="16dp"
+        android:src="@android:drawable/ic_dialog_info" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="(QR Code Auto-generated)"
+        android:textColor="@color/text_muted"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/etPairingLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="#2C2C2C"
+        android:enabled="false"
+        android:padding="16dp"
+        android:text="airconnection://pair?code=123456"
+        android:textColor="@color/text_white"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnCopyLink"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#444444"
+            android:text="Copy Link"
+            android:textColor="@color/text_white" />
+
+        <Button
+            android:id="@+id/btnShareLink"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/primary_sky"
+            android:text="Share Link"
+            android:textColor="@color/text_white" />
+    </LinearLayout>
+
+</LinearLayout>

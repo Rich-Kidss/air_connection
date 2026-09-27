@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "com.airconnection.app-mergeReleaseResources-34:/layout/activity_main.xml",
+        "source": "com.airconnection.app-main-36:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.airconnection.app-mergeReleaseResources-34:/layout/activity_live_screen_mirror.xml",
+        "source": "com.airconnection.app-main-36:/layout/activity_live_screen_mirror.xml"
+    },
+    {
+        "merged": "com.airconnection.app-mergeReleaseResources-34:/layout/activity_child_setup.xml",
+        "source": "com.airconnection.app-main-36:/layout/activity_child_setup.xml"
+    },
+    {
+        "merged": "com.airconnection.app-mergeReleaseResources-34:/layout/item_child_device.xml",
+        "source": "com.airconnection.app-main-36:/layout/item_child_device.xml"
+    },
+    {
+        "merged": "com.airconnection.app-mergeReleaseResources-34:/layout/activity_parent_dashboard.xml",
+        "source": "com.airconnection.app-main-36:/layout/activity_parent_dashboard.xml"
+    },
+    {
+        "merged": "com.airconnection.app-mergeReleaseResources-34:/layout/item_gallery_photo.xml",
+        "source": "com.airconnection.app-main-36:/layout/item_gallery_photo.xml"
+    },
+    {
+        "merged": "com.airconnection.app-mergeReleaseResources-34:/layout/activity_child_pairing.xml",
+        "source": "com.airconnection.app-main-36:/layout/activity_child_pairing.xml"
+    },
+    {
+        "merged": "com.airconnection.app-mergeReleaseResources-34:/layout/activity_pairing_link.xml",
+        "source": "com.airconnection.app-main-36:/layout/activity_pairing_link.xml"
+    },
+    {
+        "merged": "com.airconnection.app-mergeReleaseResources-34:/layout/activity_child_gallery.xml",
+        "source": "com.airconnection.app-main-36:/layout/activity_child_gallery.xml"
+    },
+    {
+        "merged": "com.airconnection.app-mergeReleaseResources-34:/layout/activity_live_camera.xml",
+        "source": "com.airconnection.app-main-36:/layout/activity_live_camera.xml"
+    }
+]

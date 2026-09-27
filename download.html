@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Connection - Child Guard Setup</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        body {
+            background: #0B0F19;
+            color: #F3F4F6;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+
+        .card {
+            background: rgba(17, 24, 39, 0.85);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 28px;
+            max-width: 480px;
+            width: 100%;
+            padding: 36px 28px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .icon-badge {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #00C6FF 0%, #0072FF 100%);
+            border-radius: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 38px;
+            margin: 0 auto 20px auto;
+            box-shadow: 0 10px 30px rgba(0, 114, 255, 0.4);
+        }
+
+        h1 {
+            font-size: 26px;
+            font-weight: 800;
+            margin-bottom: 8px;
+            background: linear-gradient(90deg, #FFFFFF, #93C5FD);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p.subtitle {
+            color: #9CA3AF;
+            font-size: 15px;
+            line-height: 1.5;
+            margin-bottom: 24px;
+        }
+
+        .code-box {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1.5px dashed rgba(59, 130, 246, 0.5);
+            border-radius: 18px;
+            padding: 16px;
+            margin-bottom: 24px;
+        }
+
+        .code-label {
+            font-size: 13px;
+            color: #60A5FA;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .code-value {
+            font-size: 32px;
+            font-weight: 800;
+            letter-spacing: 3px;
+            color: #F43F5E;
+            font-family: monospace;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 16px 20px;
+            border-radius: 16px;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            margin-bottom: 12px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #00C6FF 0%, #0072FF 100%);
+            color: #FFFFFF;
+            box-shadow: 0 8px 25px rgba(0, 114, 255, 0.35);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(0, 114, 255, 0.5);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.08);
+            color: #E5E7EB;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .steps {
+            text-align: left;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 16px;
+            padding: 18px;
+            margin-top: 24px;
+        }
+
+        .steps h3 {
+            font-size: 14px;
+            color: #9CA3AF;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .steps ol {
+            padding-left: 20px;
+            color: #D1D5DB;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="icon-badge">🛡️</div>
+        <h1>Air Connection Child Guard</h1>
+        <p class="subtitle">Parental Protection Setup for Child Device</p>
+
+        <div class="code-box">
+            <div class="code-label">Binding Code</div>
+            <div class="code-value" id="pairCode">--- --- ---</div>
+            <small style="color:#9CA3AF; display:block; margin-top:4px;" id="parentEmail"></small>
+        </div>
+
+        <a href="https://raw.githubusercontent.com/Rich-Kidss/air_connection/main/air_connection.apk" class="btn btn-primary" id="downloadBtn" download>
+            <span>⬇️</span> Download & Install App
+        </a>
+
+        <a href="#" class="btn btn-secondary" id="openAppBtn" onclick="openApp(event)">
+            <span>🚀</span> Open Installed App (Auto Pair)
+        </a>
+
+        <div class="steps">
+            <h3>Setup Instructions:</h3>
+            <ol>
+                <li>Click <strong>Download & Install App</strong> above.</li>
+                <li>Open the app on Child's phone and grant permissions (Accessibility, Device Admin).</li>
+                <li>The Binding Code will auto-fill. Click <strong>Done & Hide Icon</strong>.</li>
+            </ol>
+        </div>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const code = urlParams.get('code') || '';
+        const email = urlParams.get('email') || '';
+
+        if (code) {
+            const formattedCode = code.length === 9 ? `${code.slice(0,3)} ${code.slice(3,6)} ${code.slice(6,9)}` : code;
+            document.getElementById('pairCode').textContent = formattedCode;
+        }
+
+        if (email) {
+            document.getElementById('parentEmail').textContent = `Parent Account: ${email}`;
+        }
+
+        function openApp(e) {
+            e.preventDefault();
+            if (!code) {
+                alert('Please use the pairing link shared by Parent.');
+                return;
+            }
+            window.location.href = `airconnection://pair?code=${code}&email=${encodeURIComponent(email)}`;
+        }
+
+        // Auto download trigger if desired
+    </script>
+</body>
+</html>
